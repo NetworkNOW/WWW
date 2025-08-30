@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network Now - Under construction - Stay tuned!</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #000000;
+            color: #e0e0e0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+            text-align: center;
+            margin: 0;
+            padding: 0; /* usunięty odstęp */
+        }
+
+        .container {
+            max-width: 900px;
+            width: 100%;
+        }
+
+        .logo-container {
+            margin-top: 10px;   /* minimalny odstęp od góry */
+            margin-bottom: 2rem;
+            display: flex;
+            justify-content: center;
+        }
+
+        .logo-container img {
+            max-width: 500px; 
+            width: 100%;      
+            height: auto;    
+        }
+
+        .title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+            color: #ffffff;
+        }
+
+        .subtitle {
+            font-size: 1.25rem;
+            font-weight: 400;
+            margin-bottom: 3rem;
+            opacity: 0.8;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .services-container {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            margin-bottom: 3rem;
+        }
+
+        .service-column {
+            flex: 1 1 250px;
+            padding: 1.5rem;
+            background: linear-gradient(145deg, #2a2a2a, #1e1e1e);
+            border-radius: 1rem;
+            border: 1px solid #333;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .service-column:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+        }
+
+        .service-column h4 {
+            font-size: 1.125rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: #ffffff;
+        }
+        
+        .service-column p {
+            opacity: 0.7;
+        }
+
+        .button-container {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .button {
+            background-color: #3b82f6;
+            color: #fff;
+            padding: 0.75rem 2.5rem;
+            border: none;
+            border-radius: 9999px;
+            font-size: 1rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .button:hover {
+            background-color: #2563eb;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+        }
+
+        .footer-text {
+            font-size: 0.875rem;
+            margin-top: 4rem;
+            opacity: 0.6;
+        }
+        
+        @media (min-width: 768px) {
+            .title {
+                font-size: 3.5rem;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo-container">
+            <img src="https://raw.githubusercontent.com/NetworkNOW/Main/refs/heads/main/network_now_logo_black.png" alt="Network Now Logo">
+        </div>
+
+        <h1 class="title">
+            Professional Network Solutions
+        </h1>
+        <p class="subtitle">
+            Our website is currently under construction. We are working hard to bring you a better experience. Stay tuned!
+        </p>
+        
+        <div class="services-container">
+            <div class="service-column">
+                <h4>Network Engineering</h4>
+                <p>Services for design, implementation, and maintenance.</p>
+            </div>
+            <div class="service-column">
+                <h4>Remote Network Management</h4>
+                <p>Secure and efficient remote oversight of your network infrastructure.</p>
+            </div>
+            <div class="service-column">
+                <h4>Network Security</h4>
+                <p>Protecting your data with robust security measures.</p>
+            </div>
+            <div class="service-column">
+                <h4>Network Architecture</h4>
+                <p>Strategic planning and design for scalable network solutions.</p>
+            </div>
+            <div class="service-column">
+                <h4>Project Management</h4>
+                <p>Overseeing network projects from start to finish.</p>
+            </div>
+        </div>
+
+        <div class="button-container">
+            <a href="https://calendly.com/network-now/30min" target="_blank" class="button">
+                Schedule a Meeting
+            </a>
+            <button id="tawk-chat-button" class="button" onclick="Tawk_API.toggle()">
+                Live Chat
+            </button>
+        </div>
+    </div>
+
+    <p class="footer-text">
+        &copy; 2025 Network Now. All Rights Reserved.
+    </p>
+
+    <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/67941f983a8427326074a543/1iid9mr6t';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+
+</body>
+</html>
